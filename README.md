@@ -10,9 +10,7 @@ Common implementations of infinite tunnels on Shadertoy use clever techniques th
 
 ## Sources
 
-- This project is based on Jamie Wong/[@jlfwong](https://github.com/jlfwong)'s [Ray Marching: Part 6](https://www.shadertoy.com/view/4tcGDr) project, as well as other code snippets introduced in his article ["Ray Marching and Signed Distance Functions"](http://jamie-wong.com/2016/07/15/ray-marching-signed-distance-functions/). The large port
-- 
-- ion of the code below comes from his project, especially with regards to the implementation of the Phong Reflection Model and Constructive Solid Geometry.
+- This project is based on Jamie Wong/[@jlfwong](https://github.com/jlfwong)'s [Ray Marching: Part 6](https://www.shadertoy.com/view/4tcGDr) project, as well as other code snippets introduced in his article ["Ray Marching and Signed Distance Functions"](http://jamie-wong.com/2016/07/15/ray-marching-signed-distance-functions/). The large portion of the code below comes from his project, especially with regards to the implementation of the Phong Reflection Model and Constructive Solid Geometry.
 - All the signed distance functions used in this project come from [Inigo Quilez's articles on 3D SDFs](https://iquilezles.org/www/articles/distfunctions/distfunctions.htm).
 
 ## Basic Structure
