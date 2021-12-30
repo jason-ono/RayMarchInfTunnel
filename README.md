@@ -15,7 +15,7 @@ Common implementations of infinite tunnels on Shadertoy use clever techniques th
 
 ## Basic Structure
 
-- There are three main components in this project: the outer cylinder, moving objectz placed on the inner surface of the cylinder to make it look like the viewer is moving inside a tunnel, and an ellipsoid placed inside the tunnel (in the center) to display the reflection of the tunnel's inner surface.
+- There are three main components in this project: the outer cylinder, moving objects placed on the inner surface of the cylinder to make it look like the viewer is moving inside a tunnel, and an ellipsoid placed inside the tunnel (in the center) to display the reflection of the tunnel's inner surface.
 
 - The camera is placed inside the cylinder, which is technically defined as an elongated torus (see the definition of `opElongateOuter`). Inside the cylinder, a group of 25 tori moves infinitely in one direction using [Sawtooth wave function](https://en.wikipedia.org/wiki/Sawtooth_wave).
 
