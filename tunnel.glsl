@@ -297,7 +297,8 @@ vec3 phongIllumination(vec3 k_a, vec3 k_d, vec3 k_s, float alpha, vec3 p, vec3 e
 void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
     vec3 dir = rayDirection(45.0, iResolution.xy, fragCoord);
-    vec3 eye = vec3(0.0, 0.0, 5.0); // camera position
+    vec3 eye = vec3(0.0, 0.0, 5.0); // center camera position
+    // vec3 eye = vec3(0.9*cos(iTime*0.5), 0.9*sin(iTime*0.1), 5.0); // dynamic camera position
     // vec3 eye = vec3(0.5,0.5, 5.0); // alternate camera position
     vec2 distVec = shortestDistanceToSurface(eye, dir, MIN_DIST, MAX_DIST);
     float dist = distVec.x;

@@ -6,7 +6,7 @@
 
 The project is live on [Shadertoy](https://www.shadertoy.com/view/NlVSWW)!
 
-Common implementations of infinite tunnels on Shadertoy use clever techniques that achieve efficient runtime performance (such as [this one](https://iquilezles.org/www/articles/tunnel/tunnel.htm) by Inigo Quilez). This project, however, is an attempt to design an infinite tunnel using traditional ray marching techniques and signed distance functions (even if that results in poorer runtime performance...).
+Common implementations of infinite tunnels on Shadertoy use clever techniques that achieve efficient runtime performance (such as [this one](https://iquilezles.org/www/articles/tunnel/tunnel.htm) by Inigo Quilez). This project, however, is an attempt to design an infinite tunnel by using traditional ray marching techniques and signed distance functions.
 
 ## Sources
 
@@ -20,6 +20,8 @@ Common implementations of infinite tunnels on Shadertoy use clever techniques th
 - The camera is placed inside the cylinder, which is technically defined as an elongated torus (see the definition of `opElongateOuter`). Inside the cylinder, a group of 25 tori moves infinitely in one direction using [Sawtooth wave function](https://en.wikipedia.org/wiki/Sawtooth_wave).
 
   ![](https://raw.githubusercontent.com/jason-ono/Story/master/inftunnel_assets/mechanism.jpeg)
+
+- Using the `iTime` variable, you can also move the camera position dynamically (try uncommenting the sample dynamic camera position).
 
 - This project uses Jamie Wong's implementation of the Phong Lighting Model, with five light sources: left, right, top, bottom, and in front, all with respect to the camera angle. I wanted the inner surface of the tunnel to look like it is glowing so that you can see the glow reflect on the ellipsoid. Thus, the ellipsoid does not have its own ambient color and instead fully reflects the color of the inner surface of the tunnel.
 
