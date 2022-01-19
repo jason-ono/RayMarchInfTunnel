@@ -21,7 +21,7 @@ Common implementations of infinite tunnels on Shadertoy use clever techniques th
 
   ![](https://raw.githubusercontent.com/jason-ono/Story/master/inftunnel_assets/mechanism.jpeg)
 
-- Using the `iTime` variable, you can also move the camera position dynamically (try uncommenting the sample dynamic camera position).
+- Using the `iTime` variable, you can also move the camera position dynamically.
 
 - This project uses Jamie Wong's implementation of the Phong Lighting Model, with five light sources: left, right, top, bottom, and in front, all with respect to the camera angle. I wanted the inner surface of the tunnel to look like it is glowing so that you can see the glow reflect on the ellipsoid. Thus, the ellipsoid does not have its own ambient color and instead fully reflects the color of the inner surface of the tunnel.
 
